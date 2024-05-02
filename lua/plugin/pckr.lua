@@ -43,5 +43,12 @@ require('pckr').add{
   'ellisonleao/glow.nvim';
   'lukas-reineke/indent-blankline.nvim';
   'lewis6991/gitsigns.nvim';
+  -- snippers and autocomplete
+  
+  'hrsh7th/cmp-nvim-lsp';
+  'hrsh7th/nvim-cmp';
 
- }
+  'L3MON4D3/LuaSnip';
+  'saadparwaiz1/cmp_luasnip';
+  'rafamadriz/friendly-snippets';
+}
