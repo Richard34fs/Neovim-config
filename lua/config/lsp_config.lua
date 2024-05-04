@@ -1,19 +1,29 @@
 require("mason").setup()
 require("mason-lspconfig").setup{
-  ensure_installed = { "lua_ls", "rust_analyzer", "pyright", "html"},
+  ensure_installed = { "lua_ls", "rust_analyzer", "pyright", "html", "clangd", "tsserver"},
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local lspconfig = require('lspconfig')  
 
-require("lspconfig").pyright.setup {
+lspconfig.pyright.setup ({
 capabilities = capabilities,
-}
-require("lspconfig").lua_ls.setup {
+})
+
+lspconfig.lua_ls.setup ({
 capabilities = capabilities,
-}
-require("lspconfig").rust_analyzer.setup {
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+})
+
+lspconfig.rust_analyzer.setup ({
 capabilities = capabilities,
-}
-require("lspconfig").html.setup {
+})
+lspconfig.html.setup ({
 capabilities = capabilities,
-}
+})
+lspconfig.clangd.setup ({
+capabilities = capabilities,
+})
+lspconfig.tsserver.setup ({
+capabilities = capabilities,
+})

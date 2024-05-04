@@ -27,7 +27,7 @@ require('pckr').add{
   };
   'github/copilot.vim';
   'nvim-lua/plenary.nvim';
-  'nvim-treesitter/nvim-treesitter';
+  {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'};
   'nvim-tree/nvim-web-devicons';
   {
     'nvim-telescope/telescope.nvim',
@@ -48,7 +48,7 @@ require('pckr').add{
   'hrsh7th/cmp-nvim-lsp';
   'hrsh7th/nvim-cmp';
 
-  'L3MON4D3/LuaSnip';
-  'saadparwaiz1/cmp_luasnip';
-  'rafamadriz/friendly-snippets';
+  {'L3MON4D3/LuaSnip', 
+    requires = {'saadparwaiz1/cmp_luasnip', 'rafamadriz/friendly-snippets'}
+  };
 }
