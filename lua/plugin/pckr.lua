@@ -48,7 +48,13 @@ require('pckr').add{
   'hrsh7th/cmp-nvim-lsp';
   'hrsh7th/nvim-cmp';
 
-  {'L3MON4D3/LuaSnip', 
+  {
+    'L3MON4D3/LuaSnip', 
     requires = {'saadparwaiz1/cmp_luasnip', 'rafamadriz/friendly-snippets'}
   };
+  
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter"
+  }
 }
