@@ -56,5 +56,10 @@ require('pckr').add{
   {
     "windwp/nvim-autopairs",
     event = "InsertEnter"
+  };
+
+  {
+  'VonHeikemen/fine-cmdline.nvim',
+    requires = {'MunifTanjim/nui.nvim'}
   }
 }
