@@ -1,5 +1,6 @@
 # Here you can see my Neovim configurations
 
+
 To manage my plugins, I'm using [Lua](https://www.lua.org/) and [pckr.vim](https://github.com/lewis6991/pckr.nvim).
 Here is a list of installed plugins:
 - [copilot](https://github.com/features/copilot)
@@ -15,6 +16,25 @@ Here is a list of installed plugins:
 - [glow.nvim](https://github.com/ellisonleao/glow.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [VonHeikemen/fine-cmdline.nvim](https://github.com/VonHeikemen/fine-cmdline.nvim)
+- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
+
+_click on the plugins links for more details_
+
+---
+
+To use this configuration, you need to install::
+- [nerdfont](https://www.nerdfonts.com/).
+- [neovim(v0.9.0)](https://neovim.io/) or newer;
+
+> After installing all plugins, languages, and LSP servers, you can check if everything is alright using `:checkhealth`.
+---
 
 If you can use the LSP and treesitter features, just use the commands:
 
@@ -24,4 +44,23 @@ If you can use the LSP and treesitter features, just use the commands:
 ```
 TSInstall (language_name)
 ```
-> You can see all servers available for Mason using **:Mason**.
+> You can see all servers available for Mason using `:Mason`.
+---
+## Autocomplete Configuration:
+
+To configure the snippets and autocomplete for some languages, you have to add `capabilities = capabilities,` in the language_server setup in `lua/config/lsp_config.lua`:
+- Exemple:
+```
+lspconfig.lua_ls.setup ({
+  capabilities = capabilities,
+})
+```
+>This way, you can use the autocomplete features. _(I don't yet know how to make this automatic when you use :MasonInstall (language_server_name), to add the configuration together. If you know, you can help me)_
+
+---
+
+### keymap that I set:
+
+| Mappings | Action                        |
+| ---------| ----------------------------- |
+| `<C-k>` | `:NvimTreeFindFileToggle<CR>` |
