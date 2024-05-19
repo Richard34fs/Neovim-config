@@ -61,5 +61,10 @@ require('pckr').add{
   {
   'VonHeikemen/fine-cmdline.nvim',
     requires = {'MunifTanjim/nui.nvim'}
+  };
+  {
+    'akinsho/bufferline.nvim', 
+    tag = "v4.5.3", 
+    requires = 'nvim-tree/nvim-web-devicons'
   }
 }

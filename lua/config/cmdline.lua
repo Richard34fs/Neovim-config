@@ -15,7 +15,7 @@ require('fine-cmdline').setup({
     border = {
       style = 'rounded',
       text = {
-      top = "cmdline",
+      top = "CmdLine",
       top_align = "center",      
       },
     },
