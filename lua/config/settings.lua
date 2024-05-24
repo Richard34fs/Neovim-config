@@ -16,3 +16,7 @@ vim.opt.expandtab = true
 vim.cmd('syntax enable')
 
 vim.opt.clipboard:append("unnamedplus")
+
+vim.opt.guicursor = {
+    "n-v-c-i:block"
+}
