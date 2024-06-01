@@ -20,3 +20,6 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.guicursor = {
     "n-v-c-i:block"
 }
+
+-- keymap --
+vim.api.nvim_set_keymap('n', '<leader>n', ':nohlsearch<CR>', { noremap = true, silent = true })
