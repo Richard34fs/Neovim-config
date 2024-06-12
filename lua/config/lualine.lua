@@ -4,7 +4,7 @@ require('lualine').setup {
     theme = 'solarized-osaka',
   },
   sections = {
-    lualine_a = {
+    lualine_c = {
       {
       'filename',
       path = 1
