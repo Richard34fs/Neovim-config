@@ -64,7 +64,7 @@ require('pckr').add{
   };
   {
     'akinsho/bufferline.nvim', 
-    tag = "v4.5.3", 
+    --tag = "v4.5.3",
     requires = 'nvim-tree/nvim-web-devicons'
   };
   'norcalli/nvim-colorizer.lua';
