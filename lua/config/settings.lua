@@ -24,3 +24,10 @@ vim.opt.guicursor = {
 vim.o.signcolumn = 'yes:1'
 -- keymap --
 vim.api.nvim_set_keymap('n', '<leader>n', ':nohlsearch<CR>', { noremap = true, silent = true })
+
+-- Remapeando 'j' para 'gj'
+vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
+
+-- Remapeando 'k' para 'gk'
+vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
+
