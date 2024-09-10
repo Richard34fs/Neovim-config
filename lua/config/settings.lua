@@ -31,3 +31,6 @@ vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
 -- Remapeando 'k' para 'gk'
 vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap('n', '<Tab>', '>>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', { noremap = true, silent = true })
+
