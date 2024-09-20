@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup{
-  ensure_installed = { "lua_ls", "rust_analyzer", "pyright", "html", "clangd", "tsserver"},
+  ensure_installed = { "lua_ls", "rust_analyzer", "pyright", "html", "clangd", "ts_ls"},
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -24,6 +24,6 @@ capabilities = capabilities,
 lspconfig.clangd.setup ({
 capabilities = capabilities,
 })
-lspconfig.tsserver.setup ({
+lspconfig.ts_ls.setup ({
 capabilities = capabilities,
 })
