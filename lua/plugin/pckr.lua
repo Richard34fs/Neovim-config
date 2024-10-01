@@ -68,4 +68,6 @@ require('pckr').add{
     requires = 'nvim-tree/nvim-web-devicons'
   };
   'norcalli/nvim-colorizer.lua';
+  'sainnhe/everforest';
+  'morhetz/gruvbox';
 }

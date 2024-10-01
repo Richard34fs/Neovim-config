@@ -1,4 +1,4 @@
-vim.opt.termguicolors = true
+vim.o.termguicolors = true
 require("bufferline").setup()
 
 vim.keymap.set('n', '<c-L>', ':BufferLineMoveNext<CR>', options)
